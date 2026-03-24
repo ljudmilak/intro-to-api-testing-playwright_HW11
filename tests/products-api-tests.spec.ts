@@ -135,7 +135,7 @@ test.describe('Lesson 11 -> Product API tests', () => {
     expect(response.status()).toBe(StatusCodes.UNAUTHORIZED)
   })
 
-  test('GET /product /{id} - non existing product returns status 400', async ({ request }) => {
+  test('GET /product/{id} - non existing product returns status 400', async ({ request }) => {
     const response = await request.get(`${BaseEndpointURL}/989879787`, {
       headers: AUTH,
     })
